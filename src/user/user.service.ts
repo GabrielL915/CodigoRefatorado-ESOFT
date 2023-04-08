@@ -7,7 +7,6 @@ class UserService {
       return newUser;
     } catch (error) {
       console.error("Error creating user: ", error);
-      throw error;
     }
   }
 
@@ -17,7 +16,6 @@ class UserService {
       return usersFound;
     } catch (error) {
       console.error("Error finding users: ", error);
-      throw error;
     }
   }
 
@@ -27,7 +25,6 @@ class UserService {
       return userFound;
     } catch (error) {
       console.error("Error finding user: ", error);
-      throw error;
     }
   }
   async deleteUser(id) {
@@ -36,7 +33,6 @@ class UserService {
       return userDeleted;
     } catch (error) {
       console.error("Error deleting user: ", error);
-      throw error;
     }
   }
   async updateUser(id: any, data: any) {
@@ -54,7 +50,6 @@ class UserService {
       return userToUpdate;
     } catch (error) {
       console.error("Error updating user: ", error);
-      throw error;
     }
   }
 }
