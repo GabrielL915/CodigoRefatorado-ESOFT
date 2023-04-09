@@ -43,6 +43,7 @@ class UserService {
           firstName: data.firstName,
           lastName: data.lastName,
           email: data.email,
+          age: data.age,
         },
         { new: true }
       );
